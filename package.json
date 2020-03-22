@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A React Component to render partially long lists.",
   "main": "build/index.js",
+  "module": "src/index.js",
   "scripts": {
     "start": "webpack --watch",
     "build": "webpack",
