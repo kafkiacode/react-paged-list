@@ -4,7 +4,7 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
     libraryTarget: 'commonjs2',
   },
@@ -13,7 +13,7 @@ module.exports = {
       {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|bower_components|build)/,
+        exclude: /(node_modules|bower_components|build|dist)/,
         use: {
           loader: 'babel-loader',
         },
